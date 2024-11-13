@@ -4,7 +4,14 @@
 - Można również otworzyć go za pomocą terminala wpisując "cmd" w lokalizacji plików a następnie wpisując "python oxido.py".
 - W przypadku braku bibliotek należy zainstalować "requests" i "bs4" nie umieszczam ich w osobnym pliku gdyż zostałem o to poproszony.
 
-#### Sposób działania
+### Sposób działania
+
+1. Na początku skrypt łączy się z OpenAI poprzez mój klucz API.
+2. Tworzony jest placeholder, który będzie przetrzymywać wynik naszej odpowiedzi od AI, można zrezygnować z jego użytku, ale żeby lepiej opisać co się dzieje, postanowiłem, że go zostawię.
+3. Otrzymany tekst wpisujemy w plik artykul.html
+4. Importujemy bs4 i szukamy części <body> w naszym pliku szablon.html i czyścimy go (co nie jest konieczne, ale jeśli podmieni sie plik, wszystko i tak zadziała) i wpisujemy do niego nasz artykuł
+
+#### Stary sposób działania (wraz z generowaniem plików szablon.html i podglad.html)
 
 1. Na początku skrypt łączy się z OpenAI poprzez mój klucz API.
 2. Utworzona jest flaga, która sprawdza do którego pliku powinien być wpisany wynik naszych promptów.
