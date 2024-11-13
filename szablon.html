@@ -1,0 +1,35 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Visualization</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        #text {
+            text-align: center;
+            font-size: 24px;
+            color: #333;
+            margin-top: 50px;
+        }
+    </style>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const textElement = document.createElement('div');
+            textElement.id = 'text';
+            textElement.innerHTML = 'Hello, World!';
+            document.body.appendChild(textElement);
+        });
+    </script>
+</head>
+<body>
+</body>
+</html>
+```
