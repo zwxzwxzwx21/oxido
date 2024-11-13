@@ -20,3 +20,4 @@ response = requests.post(url_test,headers=headers,json=data)
 
 print(response.json()['choices'][0]['message']['content']) 
 
+# test
